@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "prueba-angular-dda89"
+  },
+  "targets": {
+    "holamundo-c5321": {
+      "hosting": {
+        "hola-mundo": [
+          "holamundo-c5321"
+        ]
+      }
+    }
+  }
+}
