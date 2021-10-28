@@ -101,7 +101,13 @@
         },
         "deploy": {
           "builder": "@angular/fire:deploy",
-          "options": {}
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "hola-mundo:build:production",
+            "firebaseProject": "holamundo-c5321",
+            "firebaseHostingSite": "holamundo-c5321"
+          }
         }
       }
     }
