@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-
 import { AngularFireModule } from '@angular/fire/compat';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -28,6 +26,8 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { DocentesComponent } from './datos/docentes/docentes.component';
+import { EstudiantesComponent } from './datos/estudiantes/estudiantes.component';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -52,7 +52,9 @@ const app = initializeApp(firebaseConfig);
     SignUppageComponent,
     DocenteComponent,
     EstudianteComponent,
-    MateriaComponent
+    MateriaComponent,
+    DocentesComponent,
+    EstudiantesComponent
   ],
   imports: [
     BrowserModule,
