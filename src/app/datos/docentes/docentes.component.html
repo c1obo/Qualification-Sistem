@@ -9,9 +9,9 @@
       <table class="table mt-5 table-striped">
         <thead>
           <tr>
+            <th scope="col">Código</th>
             <th scope="col">Nombre</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col"></th>
+           
           </tr>
         </thead>
         <tbody>
@@ -28,7 +28,10 @@
 
       <ul>
         <li class="text" *ngFor="let item of docentes | async">
-          {{item.Nombre}}
+          {{item.codigo}}
+        </li>
+        <li class="text" *ngFor="let item of docentes | async">
+          {{item.nombre}}
         </li>
       </ul>
     </div>

@@ -2,15 +2,15 @@
   <div class="card">
     <div class="card-body">
       <span class="h3">
-        Cosas
+        Materias
       </span>
       <button class="btn btn-dark" routerLink="/nueva-cosa">Nuevo</button>
       <table class="table mt-5 table-striped">
         <thead>
           <tr>
-            <th scope="col">Nombre</th>
-            <th scope="col">Cantidad</th>
-            <th scope="col"></th>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Profesor</th>
           </tr>
         </thead>
         <tbody>
@@ -26,8 +26,14 @@
       </table>
 
       <ul>
-        <li class="text" *ngFor="let item of listaCosas | async">
-          {{item.Nombre}}
+        <li class="text" *ngFor="let item of materias | async">
+          {{item.codigo}}
+        </li>
+        <li class="text" *ngFor="let item of materias | async">
+          {{item.nombre}}
+        </li>
+        <li class="text" *ngFor="let item of materias | async">
+          {{item.profesor}}
         </li>
       </ul>
     </div>
