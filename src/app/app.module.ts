@@ -28,6 +28,9 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { EmailComponentComponent } from './email-component/email-component.component';
+import { ProfileComponentComponent } from './profile-component/profile-component.component';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -41,12 +44,13 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   declarations: [
     AppComponent,
     HomepageComponent,
-    LoginpageComponent,
     SignUppageComponent,
-
+    LoginpageComponent,
     DocenteComponent,
     EstudianteComponent,
-    MateriaComponent
+    MateriaComponent,
+    EmailComponentComponent,
+    ProfileComponentComponent
 
   ],
   imports: [
@@ -65,8 +69,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     provideRemoteConfig(() => getRemoteConfig()),
     provideStorage(() => getStorage()),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
-    
+    AngularFireAuthModule
+
 
 
   ],
